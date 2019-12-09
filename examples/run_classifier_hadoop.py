@@ -797,7 +797,6 @@ def main():
         print("Loading finetuned model....")
         model = BertForSequenceClassification.from_pretrained(args.output_dir, num_labels=num_labels)
         tokenizer = BertTokenizer.from_pretrained(args.output_dir, do_lower_case=args.do_lower_case)
-
     else:
         model = BertForSequenceClassification.from_pretrained(args.bert_model, num_labels=num_labels)
 
